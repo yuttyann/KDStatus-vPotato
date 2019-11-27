@@ -1,0 +1,37 @@
+name: ${project.name}
+main: com.github.yuttyann.kdstatus.KDStatus
+version: ${project.version}
+# api-version: 1.13
+description: ${project.description}
+author: yuttyann44581
+website: ${project.url}
+
+commands:
+  kdstatus:
+    description: KDStatus Commands
+    usage: |
+           /<command> reload - ファイルの再読み込みをします。
+           /<command> ranking <pvp | pve> [top] - ランキングを表示します。
+           /<command> status [player] - ステータスを表示します。
+           /<command> set pvpkills <player> <amount> - PVP-Killsを設定します。
+           /<command> set pvpdeaths <player> <amount> - PVP-Deathsを設定します。
+           /<command> set pvekills <player> <amount> - PVE-Killsを設定します。
+           /<command> set pvedeaths <player> <amount> - PVE-Deathsを設定します。
+    aliases: [kds]
+
+permissions:
+  kdstatus.command.*:
+    default: op
+    children:
+      kdstatus.command.reload: true
+      kdstatus.command.ranking: true
+      kdstatus.command.status: true
+      kdstatus.command.set: true
+  kdstatus.command.reload:
+    default: false
+  kdstatus.command.ranking:
+    default: true
+  kdstatus.command.status:
+    default: true
+  kdstatus.command.set:
+    default: false

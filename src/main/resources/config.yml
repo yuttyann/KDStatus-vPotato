@@ -1,0 +1,8 @@
+﻿# KDStatus v${project.version} Config #
+Drop: true
+
+Items:
+  gold_apple:
+    Material: GOLDEN_APPLE
+    Damage: 0
+    Amount: 1
