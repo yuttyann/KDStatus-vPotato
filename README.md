@@ -1,5 +1,5 @@
 # [v1.0.0]KDStatus-vPotato
-既存のKDStatusをポテト氏の要望により、リメイクしたプラグイン
+既存の [KDStatus](https://web.archive.org/web/20190715123352/https://forum.minecraftuser.jp/viewtopic.php?f=38&t=29155) をポテト氏の要望により、リメイクしたプラグイン
 <br>
 <br>
 詳細：
