@@ -142,7 +142,7 @@ public class KDStatusCommand extends BaseCommand {
 		}
 		int amount = Integer.parseInt(args[3]);
 		Status status = ((KDStatus) getPlugin()).getProfile(player.getUniqueId()).getStatus();
-		switch (args[2].toLowerCase()) {
+		switch (args[1].toLowerCase()) {
 		case "pvpkills":
 			status.setPVPKills(i -> amount);
 			status.save();
